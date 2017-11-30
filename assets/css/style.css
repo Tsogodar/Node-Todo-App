@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.main, .list {
+    margin-top: 5%;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.input {
+    margin: 3% auto;
+    width: 40%;
+}
+
+table {
+    width: 50%;
+}
+
+table tr td:first-child {
+    width: 70%;
+    font-size: 25px;
+}
+
+table tr td button {
+    margin: 0 3px;
+}
+
+.input .form-control {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    display: inline;
+    width: 80%;
+}
+
+.input .form-control:focus {
+    box-shadow: 0 0
+}
+
+.input button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 20%;
+    float: right;
+}
+
+.list table {
+    margin: 0 auto;
+}
+
+.remove{
+    padding:0;
+    width:50px;
+}

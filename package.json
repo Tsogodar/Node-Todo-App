@@ -1,0 +1,26 @@
+{
+  "name": "TODO",
+  "version": "1.0.0",
+  "description": "Express Todo App",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha .",
+    "start": "node ./config/server"
+  },
+  "keywords": [],
+  "author": "Marcin Gryczon",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "bootstrap": "4.0.0-beta.2",
+    "express": "4.16.2",
+    "express-handlebars": "3.0.0",
+    "jquery": "3.2.1",
+    "moment": "2.19.3",
+    "mongoose": "4.13.5"
+  },
+  "devDependencies": {
+    "mocha": "4.0.1",
+    "supertest": "3.0.0"
+  }
+}

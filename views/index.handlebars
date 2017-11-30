@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="main">
+        <div class="title">
+            <h1>Todo</h1>
+        </div>
+        <div class="input">
+            <form action="/todo/add" method="post">
+                <input type="text" name="newTaskInput" class="newTodo form-control" maxlength="55"
+                       placeholder="Nowe zadanie" required>
+                <button class="addTask btn btn-primary">Dodaj</button>
+            </form>
+        </div>
+        {{#if todos}}
+            <h2>Zadania</h2>
+            <div class="list">
+                <table class="table mt-lg-5">
+                    <tbody>
+                    {{#each todos}}
+                        <tr>
+                            <td>{{title}}</td>
+                            <td>{{date}}</td>
+                            <td class="col-md-offset-3">
+                                <a href='/todo/remove/{{_id}}'>
+                                    <button class="remove btn btn-danger">Usuń</button>
+                                </a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        {{else}}
+            <h2>Brak zadań</h2>
+        {{/if}}
+    </div>
+</div>
